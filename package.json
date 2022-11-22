@@ -9,7 +9,7 @@
     "build:vue": "run-p type-check build-only",
     "build-only:vue": "vite build",
     "build:electron": "rollup -c",
-    "build: package": "electron-builder build -c electron-builder.yaml",
+    "build: package": "electron-builder build -c electron-builder.yaml --x64 --ia32",
     "commit": "git add . & npx cz",
     "dev:electron": "electron .",
     "dev:vue": "vite",
