@@ -3,15 +3,18 @@
   "version": "0.0.0",
   "type": "commonjs",
   "main": "src/cache/main.js",
+  "author": "LMX<2649078304@qq.com>",
+  "description": "a electron and vue3 template",
   "scripts": {
-    "dev:vue": "vite",
     "build:vue": "run-p type-check build-only",
-    "preview:vue": "vite preview --port 4173",
     "build-only:vue": "vite build",
     "build:electron": "rollup -c",
+    "build: package": "electron-builder build -c electron-builder.yaml",
+    "commit": "git add . & npx cz",
     "dev:electron": "electron .",
-    "type-check": "vue-tsc --noEmit",
-    "commit": "git add . & npx cz"
+    "dev:vue": "vite",
+    "preview:vue": "vite preview --port 4173",
+    "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
     "pinia": "^2.0.21",

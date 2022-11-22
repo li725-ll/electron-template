@@ -1,0 +1,19 @@
+appId: "you appid"
+productName: "demo"
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+file:
+  #{
+  #  "from": "path/to/source",
+  #  "to": "path/to/destination",
+  #  "filter": [ "**/*", "!foo/*.js" ]
+  #}
+  extraResources:[ # 要复制到资源文件夹的文件，例如：图片
+
+  ]
+  extraFiles:[ #要复制到程序根文件夹的文件，例如：dll文件
+    
+  ]
+

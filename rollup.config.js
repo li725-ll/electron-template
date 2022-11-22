@@ -8,6 +8,7 @@ module.exports = {
         file: "src/cache/main.js",
         format: "cjs"
     },
+    external: ["electron", "path"],
     plugins: [
         typescript({ include: "electron" }),
         terser(),
