@@ -30,9 +30,12 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+npm run dev:vue
 ```
-
+### Open a new terminal
+```sh
+npm run dev:electron
+```
 ### Type-Check, Compile and Minify for Production
 
 ```sh

@@ -8,10 +8,9 @@
   "scripts": {
     "build:vue": "run-p type-check build-only",
     "build-only:vue": "vite build",
-    "build:electron": "rollup -c",
-    "build: package": "electron-builder build -c electron-builder.yaml --x64 --ia32",
+    "build:package": "electron-builder build -c electron-builder.yaml --x64 --ia32",
     "commit": "git add . & npx cz",
-    "dev:electron": "electron .",
+    "dev:electron": "rollup -c & electron .",
     "dev:vue": "vite",
     "preview:vue": "vite preview --port 4173",
     "type-check": "vue-tsc --noEmit"
