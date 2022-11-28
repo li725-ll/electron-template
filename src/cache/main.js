@@ -1,1 +1,1 @@
-"use strict";var e=require("electron"),i=require("path");e.app.whenReady().then((()=>{!function(){const r=new e.BrowserWindow({width:600,height:400}),t=i.resolve(__dirname,"../../vue-dist/index.html");r.loadFile(t)}()}));
+"use strict";var e=require("electron"),n=require("path");console.log("production"),e.app.whenReady().then((()=>{!function(){const o=new e.BrowserWindow({width:600,height:400});{const e=n.resolve(__dirname,"../../vue-dist/index.html");o.loadFile(e)}}()}));
