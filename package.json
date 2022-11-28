@@ -6,16 +6,16 @@
   "author": "LMX<2649078304@qq.com>",
   "description": "a electron and vue3 template",
   "scripts": {
-    "build:vue": "run-p type-check build-only",
+    "build:vue": "run-p type-check build-only:vue",
     "build-only:vue": "vite build",
     "build:electron": "rollup -c --environment NODE_ENV:production",
     "build-only:electron": "rollup -c --environment NODE_ENV:development",
-    "build:package": "build:electron & electron-builder build -c --x64",
+    "build:package": "run-p build:vue & run-p build:electron & electron-builder build -c --x64",
     "commit": "git add . & npx cz",
-    "dev:electron": "yarn run build-only:electron & electron .",
+    "dev:electron": "run-p build-only:electron & electron .",
     "dev:vue": "vite",
     "preview:vue": "vite preview --port 4173",
-    "preview:electron": "yarn run build:electron & electron .",
+    "preview:electron": "run-p build:electron & electron .",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
