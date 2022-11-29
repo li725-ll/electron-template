@@ -1,1 +1,19 @@
-"use strict";var e=require("electron"),n=require("path");console.log("production"),e.app.whenReady().then((()=>{!function(){const o=new e.BrowserWindow({width:600,height:400});{const e=n.resolve(__dirname,"../../vue-dist/index.html");o.loadFile(e)}}()}));
+'use strict';
+
+var electron = require('electron');
+require('path');
+
+function createWindow() {
+    const mainWindow = new electron.BrowserWindow({
+        width: 800,
+        height: 600
+    });
+    {
+        mainWindow.loadURL("http://localhost:3344");
+    }
+    return mainWindow;
+}
+console.log("development");
+electron.app.whenReady().then(() => {
+    createWindow();
+});
