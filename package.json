@@ -17,7 +17,6 @@
     "build:preload": "rollup -c rollup.config.preload.js",
     "commit": "git add . & npx cz",
     "dev:electron": "electron .",
-    "dev:vue": "vite",
     "preview:vue": "vite preview --port 4173",
     "preview:electron": "run-p build:electron & electron .",
     "start": "electron-dev"

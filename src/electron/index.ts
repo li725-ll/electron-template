@@ -21,7 +21,6 @@ function createWindow(){
     return mainWindow;
 }
 
-console.log(ENV)
 app.whenReady().then(()=>{
     createWindow()
 })

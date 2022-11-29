@@ -13,7 +13,6 @@ function createWindow() {
     }
     return mainWindow;
 }
-console.log("development");
 electron.app.whenReady().then(() => {
     createWindow();
 });

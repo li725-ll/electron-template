@@ -3,7 +3,7 @@ const cp = require("child_process");
 const shell = require("shelljs");
 const chalk = require('chalk');
 
-const vite_process = cp.exec("yarn run dev:vue", (error, stdout, stderr)=>{
+const vite_process = cp.exec("npx vite", (error, stdout, stderr)=>{
   if(error){
     console.log(chalk.red("vite 启动异常！"));
   }
